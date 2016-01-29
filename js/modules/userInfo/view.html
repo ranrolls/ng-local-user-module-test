@@ -1,12 +1,18 @@
 <ion-view>
 
     <div class="bar bar-header bar-light">
+    	<button ui-sref="startup.list" class="button icon ion-navicon"></button>
         <h1 class="title">user info view</h1>
     </div>
        
     <ion-content class="has-header">
         
-        <h1>user info view</h1>
+         <div class="row">
+    		<div class="col">
+    			<button class="button-block button-large button" ng-click="ui.logout()">Logout</button>
+    		</div>
+    	</div>
+
         
     </ion-content>
     

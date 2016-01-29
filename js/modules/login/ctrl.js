@@ -23,6 +23,7 @@
 			toastr.info('Finding User');
 			if(User.checkUser(vm.un, vm.p) == true){
 				toastr.success('user found');
+				User.login();
 				$state.go('startup.userInfo');
 			}else{
 				toastr.error('user not found');

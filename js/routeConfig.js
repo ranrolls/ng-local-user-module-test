@@ -24,12 +24,12 @@
                 .state('startup.register', {
                     url: "/register",
                     templateUrl: "js/modules/register/view.html",
-                    controller : "registerCtrl"
+                    controller : "registerCtrl as rc"
                 })
                 .state('startup.userInfo', {
                     url: "/userInfo",
                     templateUrl: "js/modules/userInfo/view.html",
-                    controller : "userInfoCtrl"
+                    controller : "userInfoCtrl as ui"
                 })
                 .state('startup.restrictedArea', {
                     url: "/restrictedArea",
