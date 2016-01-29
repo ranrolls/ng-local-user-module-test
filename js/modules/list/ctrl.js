@@ -5,10 +5,14 @@
 
     	var loggedIn = false;
 
+    	var vm = this;
+
+    	
 
 function login(){
-	toastr.info('login');
-	if(User.getStatus()){
+	// toastr.info('login');
+	// toastr.info(User.getStatus());
+	if(User.getStatus() == true){
 		toastr.info('user already logged in');
 		$state.go('startup.userInfo');
 	}else{
@@ -17,8 +21,8 @@ function login(){
 }
 
 function register(){
-	toastr.info('register');
-	if(User.getStatus()){
+	// toastr.info('register');
+	if(User.getStatus() == true){
 		toastr.info('Kindly logout to register as new user');
 		$state.go('startup.userInfo');
 	}else{
@@ -27,8 +31,8 @@ function register(){
 }
 
 function userInfo(){
-	toastr.info('userInfo');
-	if(User.getStatus()){
+	// toastr.info('userInfo');
+	if(User.getStatus() == true){
 		$state.go('startup.userInfo');
 	}else{
 		toastr.info('Kindly login to get user information');
@@ -37,8 +41,8 @@ function userInfo(){
 }
 
 function restrictedArea(){
-	toastr.info('restrictedArea');
-	if(User.getStatus()){
+	// toastr.info('restrictedArea');
+	if(User.getStatus() == true){
 		toastr.info('Access to restrictedArea granted');
 		$state.go('startup.restrictedArea');
 	}else{

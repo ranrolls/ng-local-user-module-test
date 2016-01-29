@@ -5,7 +5,12 @@
 
         self.status = false;
 
-        self.userList = {};
+        self.userList = [
+            {
+                un : 'admin',
+                p : 'admin'
+            }
+        ];
 
         function getStatus(){
             return self.status;

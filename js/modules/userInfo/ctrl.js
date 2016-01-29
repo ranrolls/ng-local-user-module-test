@@ -3,7 +3,7 @@
 
     angular.module('root').controller('userInfoCtrl', function($scope, $state, toastr) {
 
-	toastr.info('userInfoCtrl');
+	// toastr.info('userInfoCtrl');
 
     })
     ;

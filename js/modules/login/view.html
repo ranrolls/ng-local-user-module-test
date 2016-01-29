@@ -6,7 +6,22 @@
        
     <ion-content class="has-header">
         
-        <h1>login view</h1>
+        <form name="userLogin" ng-submit="submit()">
+        	<div class="row">
+        		<div class="col">
+        			<input name="un" type="text" ng-model="lc.un" placeholder="Enter username" />
+        			<input name="p" type="password" ng-model="lc.p" placeholder="Enter password" />
+        			<button type="submit" class="button-block button-large button">Submit</button>
+        		</div>
+        	</div>
+        </form>
+
+        <div class="row">
+        		<div class="col">
+        			<button class="button-block button-large button" ng-click="lc.createNewUser()">Create new user</button>
+        		</div>
+        	</div>
+
         
     </ion-content>
     

@@ -14,12 +14,12 @@
                 .state('startup.list', {
                     url: "/list",
                     templateUrl: "js/modules/list/view.html",
-                    controller : "ListCtrl"
+                    controller : "ListCtrl as mc"
                 })
                 .state('startup.login', {
                     url: "/login",
                     templateUrl: "js/modules/login/view.html",
-                    controller : "loginCtrl"
+                    controller : "loginCtrl as lc"
                 })
                 .state('startup.register', {
                     url: "/register",
