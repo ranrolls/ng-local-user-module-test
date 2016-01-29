@@ -10,7 +10,7 @@
             })
             .config(function ($stateProvider, $urlRouterProvider) {
                 // if none of the above states are matched, use this as the fallback
-                $urlRouterProvider.otherwise('/startup/cordova');
+                $urlRouterProvider.otherwise('/startup/list');
             })
             .config(function(toastrConfig) {
                 angular.extend(toastrConfig, {
